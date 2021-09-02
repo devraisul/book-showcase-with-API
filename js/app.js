@@ -4,7 +4,7 @@ const searchBar = document.getElementById('search-field');
 const searchBtn = document.getElementById('search-btn');
 const totalResultCounter = document.getElementById('total-result-counter');
 const showResulCounter = document.getElementById('show-result-counter');
-console.log('hiiii');
+
 // Triggre All Functionality By Clicking Search Button
 searchBtn.addEventListener('click', () => {
     
