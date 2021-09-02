@@ -52,8 +52,8 @@ let searchResult = (data) => {
         // Clear Book Container's Content
         bookShelf.innerHTML = "";
         
-        // Grab 30 Book From API 
-        data.slice(0,30).forEach(element => {
+        // Grab Book From API 
+        data.forEach(element => {
 
             // Increase Book Counder Value
             showData++
