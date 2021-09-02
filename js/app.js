@@ -1,13 +1,13 @@
-
 // Grab all HTML Element 
 const bookShelf = document.getElementById('book-container');
 const searchBar = document.getElementById('search-field');
 const searchBtn = document.getElementById('search-btn');
 const totalResultCounter = document.getElementById('total-result-counter');
 const showResulCounter = document.getElementById('show-result-counter');
-
+console.log('hiiii');
 // Triggre All Functionality By Clicking Search Button
 searchBtn.addEventListener('click', () => {
+    
     // Grab Input Value As  Keyword
     let keyword = searchBar.value;
 
@@ -52,14 +52,17 @@ let searchResult = (data) => {
         // Clear Book Container's Content
         bookShelf.innerHTML = "";
         
-        // Grab Book From API 
+        // Grab 30 Book From API 
         data.forEach(element => {
 
             // Increase Book Counder Value
             showData++
-
+            // Check Availability Of First Publish Year 
             let firstPublished = element.first_publish_year;
-            let authorName = element.author_name[0];
+
+
+            let authorName = element.author_name;
+            
             // Check Availability Of Title
             if (element.title === undefined) {
                 var bookName = `Unknown`;
