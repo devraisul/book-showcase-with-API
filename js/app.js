@@ -88,7 +88,7 @@ let searchResult = (data) => {
                         <p class="tracking-widest text-sm title-font font-medium text-pink-200 mb-1">
                             First published: ${firstPublished}
                         </p>
-                        <h1 class="title-font text-center text-pink-500 text-5xl  font-bold text-white mb-3">
+                        <h1 class="title-font text-center text-pink-500 text-4xl md:text-3xl  font-bold text-white mb-3">
                             ${bookName}
                         </h1>
                         <p class="text-white">
