@@ -83,7 +83,7 @@ let searchResult = (data) => {
             div.innerHTML = ` 
                 <div class="flex relative rounded-sm font-bold md:h-96 h-screen w-full">
                     <img alt="gallery" class="absolute inset-0 w-full h-full  object-center" src= "${bookCoverImg}" />
-                    <div class="px-4 py-10 flex flex-col justify-center items-center relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 overflow-hidden hover:opacity-100">
+                    <div class="transition duration-500 px-4 py-10 flex flex-col justify-center items-center relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 overflow-hidden hover:opacity-100">
                         <p class="tracking-widest text-sm title-font font-medium text-pink-200 mb-1">
                             First published: ${firstPublished}
                         </p>
