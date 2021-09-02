@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book search </title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900">
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-pink-500 mb-4 md:mb-0">
+                <span class="ml-3 text-xl font-bold">
+                    <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="loop"
+                        colors="primary:#ffffff,secondary:#e8308c" stroke="87" style="width:30px;height:30px">
+                    </lord-icon>
+                    Book Universe
+                </span>
+            </a>
+            <!--      navbar      -->
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="#" class="mr-5 text-white hover:text-pink-500">Home</a>
+                <a href="#" class="mr-5 text-white hover:text-pink-500">Top Books</a>
+                <a href="#" class="mr-5 text-white hover:text-pink-500">Categories</a>
+            </nav>
+        </div>
+    </header>
+    <main class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto ">
+            <!-- search area -->
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-4xl  text-2xl font-medium title-font mb-4 text-pink-500">SEARCH A BOOK THAT YOU WANT.
+                </h1>
+                <div class="flex w-full justify-center">
+                    <input id="search-field" type="text" placeholder="Search a book"
+                        class="text-pink-600 font-bold rounded-l-sm px-4 w-1/2 outline-none bg-gray-700">
+                    <button id="search-btn"
+                        class="inline-flex items-center bg-white border-0 py-5 px-3 focus:outline-none hover:bg-pink-500  hover:text-white font-bold rounded-r-sm  text-base text-pink-600 mt-4 md:mt-0">Search
+                    </button>
+                </div>
+            </div>
+            <!-- Result Counter -->
+            <div id="total-result-counter" class="w-100 text-4xl mb-5 text-center text-gray-600"> </div>
+            <div id="show-result-counter" class="w-100 text-4xl mb-5 text-center text-gray-600">
+                <h1 class='text-3xl text-center text-gray-500'>Please Search Your Book</h1> <br> <br> <br>
+            </div>
+            <!-- Book Container -->
+            <div id="book-container" class="flex flex-wrap -m-4 mt-5">
+            </div>
+        </div>
+    </main>
+    <!-- Lordicon CDN -->
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
